@@ -217,7 +217,7 @@
         }
 
         .primary:hover {
-            background-color: #3270FC;
+            background-color:#007bff ;
             color: white;
 
         }
@@ -390,7 +390,12 @@
             border-left: 2px solid rgba(0, 0, 0, 0.2);
             pointer-events: none;
         }
-    </style>
+#property:focus{
+    border-color:#5aa3f1;
+    box-shadow:#5aa3f1;
+        
+}    
+        </style>
 
 </head>
 
@@ -656,7 +661,8 @@
                                 margin:8px 0;
                                 outline:none;
                                 padding:8px;
-                                box-sizing:border-box;">
+                                box-sizing:border-box;
+                                box-shadow:#5aa3f1; ">
                                     <option value="select">Select</option>
                                     <option value="detached">Detached</option>
                                     <option value="condo apt">Condo Apt</option>
@@ -665,14 +671,15 @@
                                     <option value="freehold townhouse">Freehold Townhouse</option>
                                   </select>
                                   <style>
-                                    select:focus{
+                                    /* select:focus{
                                         border-color:#5aa3f1;
                                         box-shadow:#5aa3f1;
                             
-                                    }
+                                    } */
                                 </style>
                               
-                                
+                              <!-- style="background-color:#3270FC; color:#f1f7ff ; height: 50px; width: 200px; box-shadow: #5aa3f1; border-radius:4px;
+                              margin:8px 0" -->
                             </div>
                         </div>
                         <div class="row">
@@ -683,16 +690,25 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="button" placeholder="Get Estimate">
-                                <!-- <button style="background-color:#3270FC; color:#f1f7ff ; height: 50px; width: 200px; border:#007bff; border-radius:4px;
-                                margin:8px 0;"><b>Get Estimate</b></button> -->
-                                <button type="submit" class="btn float-btn color-bg fw-btn" style="align-items: center; justify-content: center; width: 200px;"> Get Estimate</button>
-                            </div>
-                        </div>
-                       
-                     
+                                
+                                
+                                    <!-- <button type="submit" class="btn float-btn color-bg fw-btn" style="align-items: center; justify-content: center; width: 200px;"> Get Estimate</button>  -->
+                                    <!-- <input type="button" placeholder="Get Estimate" class> -->
+                                    <button  class="primary" >
+                                    Get Estimate</button> 
+                                    <!-- <style> -->
+                                     <!-- .button:hover{
+                                               background-color:#ff406c;
+    
+                                        } #3C6AFD, #57C7FA) -->
+                                    
+                                    <!-- </style>  -->
+                               
+                                
 
-                        
+                                
+                            </div>
+                        </div>    
 
                     </div>
                     
@@ -834,3 +850,23 @@
 </body>
 
 </html>
+<!-- function clickimageone(el){
+	el.style.border = "1px solid blue";
+	document.getElementById("border2").style.border = "1px solid orange";
+}
+function clickimagetwo(el){
+	el.style.border = "1px solid blue";
+	document.getElementById("border1").style.border = "1px solid orange";
+}
+#border1{
+	border: 1px solid red;
+}
+#border2{
+	border: 1px solid red;
+}
+.bordeorange{
+	border: 1px solid orange;
+}
+<div class="image"><img src="img/500.png" onclick="clickimageone(this)" id="border1" style="height: 500px; max-height: 150px; max-width: 300px; top: 50px; left: 50px"></div>
+<div class="image"><img src="img/1000.png" onclick="clickimagetwo(this)" id="border2" style="height: 500px; max-height: 150px; max-width: 300px; top: 50px; left: 100px"></div> -->
+
